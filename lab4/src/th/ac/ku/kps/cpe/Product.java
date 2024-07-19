@@ -5,7 +5,14 @@ public class Product {
 	private String name;
 	private double price;
 	
-	
+	public Product(int c) {
+		this(c,"",0);
+	}
+	public Product(int c,String n,double p) {
+		this.setName(n);
+		this.setCode(c);
+		this.setPrice(p);
+	}
 	public void setCode(int c) {
 		this.code=c;
 	}
